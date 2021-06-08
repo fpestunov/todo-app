@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO APP</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>To Do</h1>
+      <form class="mb-2">
+        <input
+          type="text"
+          placeholder="What needs to be done?"
+          value=""
+        /><button type="submit">Add</button>
+      </form>
+      <h4>3 tasks remaining / Nothing to do! Add a task?</h4>
+      <ul class="todo-list">
+        <li>
+          <input id="todo-0" type="checkbox" checked="" /><span>Eat</span>
+          <div class="btn-group">
+            <button type="button" class="btn">Edit</button
+            ><button type="button" class="btn is-danger">Del</button>
+          </div>
+        </li>
+        <li>
+          <form>
+            <input type="text" value="Sleep" />
+            <div class="btn-group">
+              <button type="submit" class="btn">Save</button
+              ><button type="button" class="btn is-outlaned">Cancel</button>
+            </div>
+          </form>
+        </li>
+        <li>
+          <input id="todo-2" type="checkbox" /><span>Repeat</span>
+          <div class="btn-group">
+            <button type="button" class="btn">Edit</button
+            ><button type="button" class="btn is-danger">Del</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
